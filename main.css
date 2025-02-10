@@ -16,13 +16,11 @@ body {
     width: calc(100vw + 200px);
     max-width: 1930px;
     height: 69.5rem;
-    background-color:
-        #0A2540;
+    background-color: #0A2540;
     background-image: url(./media/image.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #0a2540;
     transform: rotate(-6deg);
 }
 
@@ -41,6 +39,9 @@ body {
 .global-scale-content span,
 .global-scale-content h2,
 .global-scale-content p,
+.global-scale-content-text p span,
+.global-scale-content-text span,
+.global-scale-content-text p,
 .bfg-main-info-wrapper span,
 .bfg-info-wrapper .atlas-info h3,
 .bfg-info-wrapper .checkout-info h3,
@@ -49,27 +50,44 @@ body {
 .bfg-info-wrapper .atlas-info p,
 .bfg-info-wrapper .checkout-info p,
 .bfg-info-wrapper .payments-info p,
-.bfg-info-wrapper .invoice-info p {
+.bfg-info-wrapper .invoice-info p,
+.dfd-main-info-wrapper span,
+.dfd-main-info-wrapper h2,
+.dfd-main-info-wrapper p,
+.dfd-explanation h5,
+.dfd-explanation p,
+.dfd-explanation button>span {
     font-family: "Inter", serif;
     font-weight: 500;
 }
 
 .global-scale-content {
+    width: 100%;
+    max-width: 50.625rem;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.global-scale-content span {
-    font-size: 17.16px;
-    line-height: 28px;
-    letter-spacing: .2px;
+.global-scale-content span,
+.global-scale-content h2,
+.global-scale-content p {
+    padding-left: 1rem;
+    padding-right: 7rem;
+}
+
+.global-scale-content span,
+.dfd-main-info-wrapper>span {
+    font-size: 1.0725rem;
+    line-height: 1.75rem;
+    letter-spacing: .0125rem;
     color: #00d4ff;
 }
 
 .global-scale-content h2,
 .main_content_wrapper h2,
-.bfg-main-info-wrapper h2 {
+.bfg-main-info-wrapper h2,
+.dfd-main-info-wrapper h2 {
     font-size: 2.1987rem;
     line-height: 3rem;
     letter-spacing: -0.0125rem;
@@ -82,7 +100,8 @@ body {
 .main_content_wrapper button,
 .er_content_container>span,
 .er_content_container p,
-.cards-wrapper p {
+.cards-wrapper p,
+.dfd-main-info-wrapper p {
     font-size: 1.1075rem;
     line-height: 1.75rem;
     letter-spacing: .0125rem;
@@ -107,26 +126,22 @@ body {
 .global-scale-content-text p {
     padding-right: 32px;
     padding-left: 16px;
-    font-family: "Inter", serif;
-    font-weight: 500;
     text-align: left;
 }
 
 .global-scale-content-text>span {
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: .1008px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .0063rem;
     color: #fff;
     border-left: .0625rem solid #00D4FF;
 }
 
 .global-scale-content-text p span {
-    font-family: "Inter", serif;
-    font-weight: 500;
     text-align: left;
-    font-size: 13.7104px;
-    line-height: 24px;
-    letter-spacing: .2px;
+    font-size: .8569rem;
+    line-height: 1.5rem;
+    letter-spacing: .0125rem;
     color: #00D4FF;
 }
 
@@ -229,7 +244,7 @@ body {
 
 .er_button>span,
 .er_content_container>span {
-    padding-right: 2rem;
+    padding-right: 1rem;
     color: #fff;
     font-size: .8719rem;
     line-height: 1.5rem;
@@ -458,4 +473,142 @@ body {
     font-size: 1.5rem;
     line-height: 2.25rem;
     letter-spacing: 0%;
+}
+
+/*  section designed for developers */
+#designed-for-developers {
+    width: 100%;
+    height: 81.875rem;
+    clip-path: polygon(0 12%, 100% 0, 100% 88%, 0% 100%);
+    background-color: #0A2540;
+
+}
+
+.dfd-wrapper {
+    width: 100%;
+    max-width: 67.5rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 23.8125rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.dfd-info-wrapper {
+    width: 100%;
+    height: 30.625rem;
+    display: flex;
+}
+
+.dfd-info-wrapper .dfd-main-info-wrapper {
+    width: 50%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 73px;
+}
+
+.dfd-main-info-wrapper span,
+.dfd-main-info-wrapper h2,
+.dfd-main-info-wrapper p {
+    padding-left: 1rem;
+    padding-right: 4rem;
+}
+
+.coding-presentation {
+    width: 50%;
+    height: 100%;
+}
+
+.dfd-button {
+    width: 10.625rem;
+    height: 2.0625rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .3rem;
+    background-color: #00D4FF;
+    border: none;
+    border-radius: 1.0313rem;
+    cursor: pointer;
+}
+
+.dfd-button>span {
+    padding: 0 1rem;
+}
+
+.dfd-button:hover {
+    transform: scale(1.1);
+}
+
+.dfd-explanation-wrapper {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dfd-explanation-wrapper .dfd-explanation {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.dfd-explanation-wrapper .dfd-explanation>img:nth-child(2) {
+    padding-bottom: 2rem;
+}
+
+.dfd-explanation>img {
+    padding-bottom: .5rem;
+}
+
+.dfd-explanation h5,
+.dfd-explanation p,
+.dfd-explanation img {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.dfd-explanation h5,
+.dfd-explanation p,
+.dfd-explanation button>span {
+    font-size: .8494rem;
+    line-height: 1.5rem;
+    letter-spacing: .0125rem;
+
+}
+
+.dfd-explanation h5 {
+    color: #FFFFFF;
+}
+
+.dfd-explanation p {
+    color: #ADBDCC;
+}
+
+.dfd-explanation button>span {
+    color: #00D4FF;
+    padding-right: 1rem;
+}
+
+.dfd-explanation button {
+    width: 100%;
+    height: 2.0625rem;
+    pad: 1rem;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
